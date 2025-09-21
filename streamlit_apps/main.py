@@ -497,11 +497,11 @@ def sql_query_interface():
 def power_bi_integration():
     """Power BI dashboard integration"""
     st.markdown("## 📊 Power BI Dashboard Integration")
-    powerbi_embed_url = "https://app.powerbi.com/reportEmbed?reportId=523bc1bc-5d99-43e0-ab41-5b5043273b49&autoAuth=true&ctid=f8e5ee17-1080-482b-87e2-fa6b0fcf9dfc"
+    powerbi_embed_url = "https://app.powerbi.com/view?r=eyJrIjoiYmFjNjM3OWItNWRlOS00MGJhLTljN2UtZjE1MjFmNDFmMTBjIiwidCI6IjE2YzQ2ODk3LWVhZDItNGE0NS1hYWEyLWQwMDc5YjRiZjliYSJ9&pageName=6a834906701ff8d5f29c"
     
     if powerbi_embed_url.startswith("https://app.powerbi.com"):
         st.components.v1.html(
-            f'<iframe src="{powerbi_embed_url}" frameborder="0" allowFullScreen="true" style="width:1300px; height:800px;"></iframe>',
+            f'<iframe src="{powerbi_embed_url}" frameborder="0" allowFullScreen="true" style="width:1300px; height:750px;"></iframe>',
             height=800,
         )
     else:
@@ -526,4 +526,5 @@ if __name__ == "__main__":
     <div style='text-align: center; color: #666;'>
         🚗 OLA Ride Analytics Dashboard | Built by Priyam Maharana | Data-Driven Insights for Better Decisions
     </div>
+
     """, unsafe_allow_html=True)
