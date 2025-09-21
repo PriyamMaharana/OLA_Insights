@@ -496,16 +496,27 @@ def sql_query_interface():
 # Power BI Integration placeholder
 def power_bi_integration():
     """Power BI dashboard integration"""
-    st.markdown("## 📊 Power BI Dashboard Integration")
-    powerbi_embed_url = "https://app.powerbi.com/view?r=eyJrIjoiYmFjNjM3OWItNWRlOS00MGJhLTljN2UtZjE1MjFmNDFmMTBjIiwidCI6IjE2YzQ2ODk3LWVhZDItNGE0NS1hYWEyLWQwMDc5YjRiZjliYSJ9&pageName=6a834906701ff8d5f29c"
+    st.markdown("## 📊 Power BI Dashboard")
+    powerbi_embed_url = "https://app.powerbi.com/view?r=eyJrIjoiYmFjNjM3OWItNWRlOS00MGJhLTljN2UtZjE1MjFmNDFmMTBjIiwidCI6IjE2YzQ2ODk3LWVhZDItNGE0NS1hYWEyLWQwMDc5YjRiZjliYSJ9"
     
     if powerbi_embed_url.startswith("https://app.powerbi.com"):
         st.components.v1.html(
-            f'<iframe src="{powerbi_embed_url}" frameborder="0" allowFullScreen="true" style="width:1300px; height:750px;"></iframe>',
-            height=800,
+            f'''
+            <div style="position:relative; width:100%; height:0; padding-bottom:75%;">
+                <iframe 
+                    src="{powerbi_embed_url}" 
+                    frameborder="0" 
+                    allowFullScreen="true" 
+                    style="position:absolute; top:0; left:0; width:100%; height:100%;">
+                </iframe>
+            </div>
+            ''',
+            height=1000,
         )
+
     else:
         st.warning("Please publish your Power BI report to the web and paste the embed URL in the code for this tab to function.")
+
 
 # Main app execution
 if __name__ == "__main__":
@@ -528,3 +539,4 @@ if __name__ == "__main__":
     </div>
 
     """, unsafe_allow_html=True)
+
