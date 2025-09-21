@@ -1,12 +1,13 @@
 # OLA Ride-Sharing Analytics - Requirements
 
 ## Core Dependencies
-streamlit==1.28.1
-pandas==2.1.1
-numpy==1.24.3
-plotly==5.17.0
-psycopg2-binary==2.9.7
-sqlalchemy==2.0.21
+streamlit
+pandas
+numpy
+plotly
+psycopg2-binary
+sqlalchemy
+tqdm
 
 ## Data Processing
 openpyxl==3.1.2
@@ -16,40 +17,24 @@ pytz==2023.3
 tqdm
 
 ## Visualization
-matplotlib==3.7.2
-seaborn==0.12.2
-folium==0.14.0
-streamlit-plotly-events==0.0.6
+matplotlib
+seaborn
+folium
+streamlit-plotly-events
 
 ## Database
-psycopg2==2.9.7
-pymongo==4.5.0
-redis==5.0.0
+psycopg2
+pymongo
+redis
 
 ## Machine Learning (Optional)
-scikit-learn==1.3.0
-scipy==1.11.3
+scikit-learn
+scipy
 
 ## Development Tools
-jupyter==1.0.0
-ipykernel==6.25.2
-black==23.7.0
-flake8==6.1.0
+jupyter
+ipykernel
+black
+flake8
 queries
 
-## Configuration
-pyyaml==6.0.1
-python-dotenv==1.0.0
-configparser==6.0.0
-
-## Security
-cryptography==41.0.4
-bcrypt==4.0.1
-
-## Deployment
-gunicorn==21.2.0
-uvicorn==0.23.2
-
-## Testing
-pytest==7.4.2
-pytest-cov==4.1.0
