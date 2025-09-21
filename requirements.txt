@@ -8,27 +8,13 @@ plotly
 psycopg2-binary
 sqlalchemy
 tqdm
-
-## Visualization
+jupyter
+queries
+ipykernel
 matplotlib
-seaborn
-folium
-streamlit-plotly-events
-
-## Database
-psycopg2
-pymongo
-redis
-
-## Machine Learning (Optional)
 scikit-learn
 scipy
 
-## Development Tools
-jupyter
-ipykernel
-black
-flake8
-queries
+
 
 
