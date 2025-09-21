@@ -9,11 +9,11 @@ psycopg2-binary
 sqlalchemy
 tqdm
 jupyter
-queries
 ipykernel
 matplotlib
 scikit-learn
 scipy
+
 
 
 
