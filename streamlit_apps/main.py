@@ -168,7 +168,7 @@ st.markdown("""
     /* RESPONSIVE DESIGN */
     @media (max-width: 992px) {
         .main-header {
-            font-size: 2.2rem;
+            font-size: 2rem; /* was 2.2rem */
         }
         .stMetric > div {
             padding: 1rem 1.5rem;
@@ -178,28 +178,39 @@ st.markdown("""
         }
         .sidebar .sidebar-content h2, 
         .sidebar .sidebar-content h3 {
-            font-size: 1.1rem;
+            font-size: 1rem; /* slightly smaller */
+        }
+        body, .block-container {
+            font-size: 0.95rem; /* reduce base font size */
         }
     }
 
     @media (max-width: 576px) {
         .main-header {
-            font-size: 1.8rem;
+            font-size: 1.1rem; /* was 1.3rem */
         }
         .stMetric > div {
-            padding: 0.8rem 1rem;
+            padding: 0.6rem 0.8rem;
         }
         h2, h3 {
-            font-size: 1rem;
+            font-size: 0.8rem; /* was 0.5rem but too small, better readability */
+        }
+        .st-emotion-cache-18tdrd9 h2 { 
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
         }
         .sidebar .sidebar-content {
             padding: 0.5rem;
         }
         .sidebar .sidebar-content h2, 
         .sidebar .sidebar-content h3 {
-            font-size: 1rem;
+            font-size: 1rem; /* was 1.2rem, reducing slightly */
+        }
+        body, .block-container {
+            font-size: 0.85rem; /* even smaller for mobile */
         }
     }
+
     </style>
 """, unsafe_allow_html=True)
 
@@ -517,7 +528,6 @@ def power_bi_integration():
     else:
         st.warning("Please publish your Power BI report to the web and paste the embed URL in the code for this tab to function.")
 
-
 # Main app execution
 if __name__ == "__main__":
     # Navigation
@@ -537,6 +547,4 @@ if __name__ == "__main__":
     <div style='text-align: center; color: #666;'>
         🚗 OLA Ride Analytics Dashboard | Built by Priyam Maharana | Data-Driven Insights for Better Decisions
     </div>
-
     """, unsafe_allow_html=True)
-
