@@ -6,6 +6,10 @@ The rise of ride-sharing platforms has transformed urban mobility, providing con
 
 This project analyzes OLA’s ride-sharing data to derive actionable insights using **SQL**, **Power BI**, and **Streamlit**, helping optimize operations, improve customer satisfaction, and support data-driven decision-making.
 
+```bash
+insights-ola.streamlit.app
+```
+
 ---
 
 ## Problem Statement
